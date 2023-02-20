@@ -1,0 +1,29 @@
+package project1;
+
+import java.util.Scanner;
+
+public class strt {
+
+	public static void main(String[] args) {
+		 //palindrome in java
+		System.out.println("Input a word:");
+		Scanner sc = new Scanner(System.in);
+		String scnd = sc.next();
+		String cmp =  "";
+		for(int i = scnd.length();i > 0;i--) {
+			cmp += scnd.substring(i-1, i);
+		}
+		if(scnd.equals(cmp)) {
+			System.out.println("Palindrome!");
+		}
+		else {
+			System.out.println("It Is Not A Palindrome");
+		}
+		
+		
+		
+		
+	}
+}
+
+
